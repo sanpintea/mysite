@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>javascript2</title>
+</head>
+<body>
+    <p id="myid">This</p>
+    <script>
+        (function(){
+            var  di = document.getElementById('myid');
+            di.addEventListener("click", function() {
+            di.innerHTML += " is test.";
+            di.style.color = 'red';
+            });
+            console.log('hello world!');
+        })();
+    </script>
+</body>
+</html>
