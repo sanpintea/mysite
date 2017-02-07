@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <title>javascript2</title>
+	<meta charset="utf-8">
+	<title>javascript2</title>
 </head>
 <body>
-    <p id="myid" style="width: 50px;">This</p>
-    <script>
-        (function(){
-            var  di = document.getElementById('myid');
-            di.addEventListener("click", function() {
-            di.innerHTML += " is test.";
-            di.style.color = 'red';
-            di.style.fontSize = "large";
-            di.style.background = 'orange';
-            });
-        })();
-    </script>
+	<p id="myid" style="width: 50px;">This</p>
+	<script>
+		(function(){
+			var  di = document.getElementById('myid');
+			di.addEventListener("click", function() {
+			di.innerHTML += " is test.";
+			di.style.color = 'red';
+			di.style.fontSize = "large";
+			di.style.background = 'orange';
+			di.style.fontStyle = '';
+			di.insertBefore('<p>test</p>');
+			di.appendChild();
+			});
+		})();
+		var dd = document.getElementById('myid');
+	</script>
 </body>
 </html>
